@@ -1,0 +1,35 @@
+torch
+transformers
+qdrant-client
+google-generativeai
+google-genai
+pillow
+python-dotenv
+colpali_engine>=0.3.1
+google-cloud-storage
+
+
+fsspec==2024.10.0
+protobuf==3.20.3 
+pdf2image
+PyPDF2
+stamina
+tqdm
+
+langchain_openai
+langchain_core
+langgraph
+langchain-google-genai
+pillow
+langchain
+langchain_google_genai
+
+pdfkit requests
+weasyprint
+
+# Install required packages (you'll need to run this in your terminal first)
+# pip install colpali_engine datasets huggingface_hub[hf_transfer] transformers qdrant-client
+# pip install fsspec==2024.10.0 protobuf==3.20.3 pdf2image PyPDF2 google-generativeai stamina
+# pip install google-cloud-storage
+# For macOS, install poppler using Homebrew
+# brew install poppler
