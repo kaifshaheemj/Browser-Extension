@@ -650,9 +650,9 @@ def process(content_url, user_query, google_api_key, google_credentials_path):
 
 if __name__ == "__main__":
     # Example usage
-    content_url = "https://www.programiz.com/python-programming/examples/factorial"
-    user_query = "Explain 5 importants points i should know?"
-    google_api_key = "AIzaSyA9I36rGn5QFV-GP8YyUvmBAzQaOsyELi4"
+    content_url = "https://www.w3schools.com/python/python_intro.asp"
+    user_query = "Why python and what can it do?"
+    google_api_key = "AIzaSyAcAics3uBFyZSnRQsAdf9FJlKAwnMNuHU"
     google_credentials_path = "/Users/saivignesh/Documents/DGM_Project/Browser-Extension/fabled-emblem-450414-r0-a631ebb8abd9.json"  # Replace with path to your GCS credentials
     
     result = process(content_url, user_query, google_api_key, google_credentials_path)
