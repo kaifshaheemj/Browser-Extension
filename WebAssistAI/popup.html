@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WebAssist AI</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      width: 250px; /* Default width */
+      height: 150px; /* Default height */
+      overflow: hidden;
+    }
+    #loadingSpinner {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>WebAssist AI</h2>
+    <input type="text" id="queryInput" placeholder="Ask something...">
+    <button id="queryBtn">Ask</button>
+
+    <div id="loadingSpinner">⏳ Loading...</div>
+    <div id="responseContainer"></div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
