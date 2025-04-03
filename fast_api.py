@@ -4,6 +4,11 @@ import os
 from typing import Optional, List
 from fastapi.middleware.cors import CORSMiddleware
 from langchain_core.messages import AIMessage
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
+
 
 # Import the process function from your existing code
 from mainfile import process
@@ -32,8 +37,8 @@ class QueryResponse(BaseModel):
     status: str
 
 # Global variables for API keys and credentials path
-DEFAULT_GOOGLE_API_KEY = "AIzaSyAcAics3uBFyZSnRQsAdf9FJlKAwnMNuHU"
-DEFAULT_GOOGLE_CREDENTIALS_PATH = "/Users/saivignesh/Documents/DGM_Project/Browser-Extension/fabled-emblem-450414-r0-a631ebb8abd9.json"
+DEFAULT_GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
+DEFAULT_GOOGLE_CREDENTIALS_PATH = os.getenv('GOOGLE_CREDENTIALS_PATH')
 
 @app.post("/process_pdf", response_model=QueryResponse)
 async def process_pdf(request: QueryRequest):

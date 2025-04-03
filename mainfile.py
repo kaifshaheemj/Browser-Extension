@@ -36,6 +36,7 @@ class Messages(MessagesState):
 
 # Configuration variables
 QDRANT_URL = "https://3bed5a5a-f523-4ae1-9ed0-d5b4408b8449.eu-west-1-0.aws.cloud.qdrant.io"
+QDRANT_LOCAL_URL = "http://localhost:6333"
 QDRANT_API_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3MiOiJtIn0.oC3xUAMljhPccXJQEZX1LjbXuO3CqYJ8CUwFZI2aGHk"
 COLLECTION_NAME = "dgmproject"
 GCS_BUCKET_NAME = "dgmtest"
@@ -632,7 +633,7 @@ def process(content_url, user_query, google_api_key, google_credentials_path):
     # Now use this tool
     tools = [search_pdf]
     
-    llm = ChatGoogleGenerativeAI(model="gemini-1.5-pro", temperature=0)
+    llm = ChatGoogleGenerativeAI(model="gemini-1.5-pro", temperature=0,request_timeout=60)
     llm_with_tools = llm.bind_tools(tools)
     
     # Create LangChain graph
@@ -651,8 +652,8 @@ def process(content_url, user_query, google_api_key, google_credentials_path):
 if __name__ == "__main__":
     # Example usage
     content_url = "https://www.w3schools.com/python/python_intro.asp"
-    user_query = "Why python and what can it do?"
-    google_api_key = "AIzaSyAcAics3uBFyZSnRQsAdf9FJlKAwnMNuHU"
+    user_query = "What is python?"
+    google_api_key = "AIzaSyC63GcvSNJcLMuwFLJAX4XEpi8NcrvD_-o"
     google_credentials_path = "/Users/saivignesh/Documents/DGM_Project/Browser-Extension/fabled-emblem-450414-r0-a631ebb8abd9.json"  # Replace with path to your GCS credentials
     
     result = process(content_url, user_query, google_api_key, google_credentials_path)

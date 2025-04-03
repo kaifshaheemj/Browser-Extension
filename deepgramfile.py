@@ -1,3 +1,5 @@
+#DEEPGRAM CODE FOR SPEECH TO TEXT
+
 import json
 import os
 from deepgram import DeepgramClient, PrerecordedOptions, FileSource
@@ -37,6 +39,6 @@ def transcribe_audio(audio_file_path: str) -> str:
 
 # Example usage
 if __name__ == "__main__":
-    audio_path = "/content/harvard.wav"
+    audio_path = "/Users/saivignesh/Documents/DGM_Project/Browser-Extension/WebAssistAI/audio/1743645512363w9vsqrwn-voicemaker.in-speech.wav"
     transcript = transcribe_audio(audio_path)
     print("Transcript:", transcript)

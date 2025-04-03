@@ -9,14 +9,18 @@
 <body>
 
   <div class="container">
+    <!-- Refresh button at top-right -->
+    <button id="refreshBtn" class="top-right">🔄</button>
+
     <h2>WebAssist AI</h2>
-    
+    <p class="quote">"A prudent question is one-half of wisdom."</p>  <!-- Added quote -->
+
     <div class="input-container">
       <input type="text" id="queryInput" placeholder="Ask something...">
-      <button id="refreshBtn">🔄</button>
+      <button id="micBtn">🎤</button> <!-- Mic button -->
     </div>
 
-    <button id="queryBtn">Ask</button>
+    <button id="queryBtn">Send</button>
 
     <div id="loadingSpinner">⏳ Loading...</div>
     <div id="responseContainer"></div>

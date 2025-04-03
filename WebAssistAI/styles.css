@@ -5,10 +5,10 @@
   box-sizing: border-box;
 }
 
-/* Popup Size (Fixes Chrome Extension Display) */
+/* Popup Size */
 html, body {
-  width: 350px;  /* Fixed popup width */
-  height: 500px; /* Fixed popup height */
+  width: 350px;
+  height: 500px;
   overflow: hidden;
   font-family: Arial, sans-serif;
   background-color: #f4f4f4;
@@ -25,9 +25,36 @@ html, body {
   background-color: #ffffff;
   padding: 20px;
   text-align: center;
+  position: relative;
 }
 
-/* Input & Refresh Button */
+/* Top-right Refresh Button */
+#refreshBtn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 8px;
+  font-size: 16px;
+  background-color: #ffcc00;
+  color: #333;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#refreshBtn:hover {
+  background-color: #ffbb00;
+}
+
+/* Quote */
+.quote {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+/* Input & Mic Button */
 .input-container {
   display: flex;
   align-items: center;
@@ -43,19 +70,20 @@ html, body {
   border-radius: 4px 0 0 4px;
 }
 
-#refreshBtn {
+/* Mic Button */
+#micBtn {
   padding: 10px;
   font-size: 16px;
-  background-color: #ffcc00;
-  color: #333;
-  border: 1px solid #ccc;
+  background-color: #007BFF;
+  color: white;
+  border: none;
   border-left: none;
   border-radius: 0 4px 4px 0;
   cursor: pointer;
 }
 
-#refreshBtn:hover {
-  background-color: #ffbb00;
+#micBtn:hover {
+  background-color: #0056b3;
 }
 
 /* Ask Button */

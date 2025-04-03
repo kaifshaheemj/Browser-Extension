@@ -15,6 +15,7 @@ pdf2image
 PyPDF2
 stamina
 tqdm
+python-dotenv
 
 langchain_openai
 langchain_core
@@ -27,6 +28,8 @@ langchain_google_genai
 pdfkit requests
 weasyprint
 fastapi
+
+deepgram-sdk
 
 # Install required packages (you'll need to run this in your terminal first)
 # pip install colpali_engine datasets huggingface_hub[hf_transfer] transformers qdrant-client
