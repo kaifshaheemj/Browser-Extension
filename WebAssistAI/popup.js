@@ -48,4 +48,10 @@ document.addEventListener("DOMContentLoaded", () => {
           responseContainer.innerText = apiResponse.status === "success" ? apiResponse.answer : `Error: ${apiResponse.answer}`;
       });
   });
+
+  // Refresh button clears the input field and response container
+  document.getElementById("refreshBtn").addEventListener("click", () => {
+      document.getElementById("queryInput").value = ""; // Clears input
+      document.getElementById("responseContainer").innerText = ""; // Clears response
+  });
 });
