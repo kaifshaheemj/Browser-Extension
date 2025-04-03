@@ -23,6 +23,9 @@ https://github.com/user-attachments/assets/2dbdd5cf-1d22-4f23-8291-d0191efe40c1
 Google Colab Link:
 https://colab.research.google.com/drive/1BfSHiSQM2nuv1GwIgCuGFYxWSpg4hfYG?usp=sharing 
 
+Presentation:
+https://docs.google.com/presentation/d/1J2wLAENLTEbP5cmN3uvTffXm2DJJXkSGzK32JV_E3gY/edit?usp=sharing 
+
 Environment Variables Required!
 GOOGLE_API_KEY="your-google-api-key"
 QDRANT_URL="your-qdrant-url"
