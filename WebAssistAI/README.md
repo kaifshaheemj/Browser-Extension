@@ -1,0 +1,1 @@
+This is a Chrome extension configuration folder where the manifest.json file plays a major role. The WebAssistAI folder will be uploaded to the developer options in Chrome to create the custom extension.
